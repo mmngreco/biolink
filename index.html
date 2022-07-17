@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Maximiliano Greco - Links</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://use.fontawesome.com/b0aa405dc8.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            VANTA.BIRDS({
+                el: "#vanta",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: true,
+                minHeight: 100.00,
+                minWidth: 100.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                backgroundAlpha: 0.0,
+                color1: 0x0,
+                color2: 0x463c2d,
+                wingSpan: 40.00,
+                separation: 50.00,
+                alignment: 77.00,
+                cohesion: 5.00,
+                quantity: 1.00
+            })
+
+            setTimeout(() => {
+                const main = document.querySelector('main')
+                main.style.opacity = 1
+                // main.style.filter = 'blur(0px)'
+            }, 100)
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <div id="vanta"></div>
+    <main class="animated">
+
+        <header>
+            <img src="./images/me.jpg" alt="me">
+            <h1>Maximiliano Greco</h1>
+        </header>
+
+        <ul>
+
+            <li>
+                <a href="https://mmngreco.github.io">
+                    <i class="fa  fa-2x fa-wordpress" aria-hidden="true"></i> Blog
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/mmngreco">
+                    <i class="fa  fa-2x fa-github" aria-hidden="true"></i> GitHub
+                </a>
+            </li>
+            <li>
+                <a href="https://gitlab.com/mmngreco">
+                    <i class="fa  fa-2x fa-gitlab" aria-hidden="true"></i> GitLab
+                </a>
+            </li>
+            <li>
+                <a href="https://Twitter.com/mmngreco">
+                    <i class="fa  fa-2x fa-twitter" aria-hidden="true"></i> Twitter
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com/in/mmngreco">
+                    <i class="fa  fa-2x fa-linkedin" aria-hidden="true"></i> Linkedin
+                </a>
+            </li>
+        </ul>
+
+    </main>
+
+</body>
+
+</html>
